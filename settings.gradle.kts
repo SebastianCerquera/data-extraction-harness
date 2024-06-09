@@ -75,12 +75,10 @@ pluginManagement {
 
 dependencyResolutionManagement {
   repositories {
-    mavenCentral()
+      gradlePluginPortal()
+      google()
+      mavenCentral()
   }
 }
 
-include("spring-data-opensearch")
-include("spring-data-opensearch-starter")
-include("spring-data-opensearch-test-autoconfigure")
-include("spring-data-opensearch-examples:spring-boot-gradle")
 include("spring-data-opensearch-examples:spring-boot-java-client-gradle")

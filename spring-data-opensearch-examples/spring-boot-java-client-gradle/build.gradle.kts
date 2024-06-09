@@ -18,10 +18,10 @@ buildscript {
 }
 
 dependencies {
-  api(project(":spring-data-opensearch")) {
+  api("org.opensearch.client:spring-data-opensearch:1.5.0") {
     exclude("org.opensearch.client", "opensearch-rest-high-level-client")
   }
-  api(project(":spring-data-opensearch-starter")) {
+  api("org.opensearch.client:spring-data-opensearch-starter:1.5.0") {
     exclude("org.opensearch.client", "opensearch-rest-high-level-client")
   }
   implementation(springLibs.boot.web)
@@ -33,7 +33,7 @@ dependencies {
   testImplementation(springLibs.boot.test)
   testImplementation(springLibs.boot.test.autoconfigure)
   testImplementation(opensearchLibs.testcontainers)
-  testImplementation(project(":spring-data-opensearch-test-autoconfigure")) {
+  testImplementation("org.opensearch.client:spring-data-opensearch-test-autoconfigure:1.5.0") {
     exclude("org.opensearch.client", "opensearch-rest-high-level-client")
   }
 
