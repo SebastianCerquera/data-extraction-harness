@@ -33,7 +33,7 @@ dependencies {
   testImplementation(springLibs.boot.test)
   testImplementation(springLibs.boot.test.autoconfigure)
   testImplementation(opensearchLibs.testcontainers)
-  testImplementation("org.opensearch.client:spring-data-opensearch-test-autoconfigure:1.5.0") {
+  testImplementation("org.opensearch.client:spring-data-opensearch-test-autoconfigure:1.5.1") {
     exclude("org.opensearch.client", "opensearch-rest-high-level-client")
   }
 
